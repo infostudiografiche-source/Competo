@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competo 0.2.6 prova 3D</title>
+    <meta name="description" content="Table game">
+    <meta property="og:title" content="Competo 0.2.6 prova 3D">
+    <meta property="og:description" content="Table game">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+      }
+    }
+    </script>
+</head>
+  <body>
+    <div id="root"></div>
+    <div id="dice-roll-overlay" class="hidden">
+        <div id="dice-roll-content">
+            <p id="dice-roll-message">Lancio per il movimento...</p>
+            <div id="dice-container">
+                <div class="die" id="die1">
+                    <div class="face face-1"><span class="dot"></span></div>
+                    <div class="face face-2"><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-3"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-5"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-6"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+                <div class="die" id="die2">
+                    <div class="face face-1"><span class="dot"></span></div>
+                    <div class="face face-2"><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-3"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-5"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="face face-6"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="index.tsx"></script>
+  </body>
+</html>

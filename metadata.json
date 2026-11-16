@@ -1,0 +1,8 @@
+{
+  "name": "Competo 0.2.6.1 prova 3D",
+  "description": "Table game",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

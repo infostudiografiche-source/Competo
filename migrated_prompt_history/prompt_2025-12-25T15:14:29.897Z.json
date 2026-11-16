@@ -1,0 +1,36 @@
+[
+  {
+    "id": 158,
+    "author": "user",
+    "payload": {
+      "type": "text",
+      "text": "riepiloga come funziona il sistema di dialogo",
+      "files": [],
+      "fileUploads": [],
+      "cMarkNode": {}
+    },
+    "createdTimestamp": 1766675660666
+  },
+  {
+    "id": 159,
+    "author": "model",
+    "payload": {
+      "type": "thinking",
+      "text": "**Reviewing Dialogue Flow**\n\nI'm currently focused on the dialogue system's core mechanism. \"Archeologia Emotiva\" uses AI to drive branching conversation paths. The key is to understand how player input influences these paths. I'm visualizing the decision points and state changes to better grasp how user responses shape the unfolding narrative within Competo. This is a critical piece, and it's coming together nicely.\n\n\n**Mapping Empathy Mechanics**\n\nI'm now diving into the specifics of empathy and its impact on the \"Rapport\" score. This score, critical to \"Archeologia Emotiva,\" governs interaction outcomes. I'm building out how positive player empathy (7+) fuels rapport, while mid or low empathy might backfire, especially if the enemy is arrogant. The \"Anima Fragment\" visualization is key, changing state based on Rapport, providing clear visual feedback on these fluctuations. The Gemini API is central to this, and generating dynamic secret profiles is critical.\n\n\n**Outlining Interaction Outcomes**\n\nI'm solidifying the mechanics of the \"Archeologia Emotiva\" dialogue system now. I'm focusing on how player choices lead to AI-driven responses and tangible in-game consequences. Specifically, I'm working through the Rapport score system, where empathy influences outcomes. Success leads to healing and rewards, while failure results in psychic backlash and combat. The \"Sognatore Bloccato\" metaphor ties it all together nicely.\n\n\n",
+      "cMarkNode": {}
+    },
+    "createdTimestamp": 1766675660666,
+    "doneTimestamp": 1766675666306
+  },
+  {
+    "id": 160,
+    "author": "model",
+    "payload": {
+      "type": "text",
+      "text": "Il sistema di dialogo in **Competo** si chiama **\"Archeologia Emotiva\"** ed è una meccanica avanzata disponibile nella modalità **Online**, dove l'IA (Gemini) agisce come mediatore psicologico tra te e l'Incubo.\n\nEcco come funziona nei dettagli:\n\n### 1. Il Concetto: Risvegliare, non Distruggere\nGli Incubi non sono mostri, ma **Sognatori Bloccati** in un \"Trauma Loop\" (un ricordo doloroso che si ripete all'infinito). Il tuo obiettivo come **Guida Lucida** è aiutarli a riconoscere la realtà per farli svegliare.\n\n### 2. Meccanica del Rapporto (Punteggio)\nIl dialogo è guidato da un punteggio di **Rapporto** che oscilla tra due soglie critiche:\n*   **Successo (+10):** L'incubo viene **Ricomposto**. Il sognatore si integra con te, ottieni Intento (monete) e progredisci verso la conquista della Chiave del settore.\n*   **Fallimento (-5):** L'incubo subisce un delirio totale. Subisci un **Contraccolpo Psichico** (danni diretti alla Volontà) e sei costretto a entrare in **Risonanza** (combattimento).\n\n### 3. Come interagire con l'IA\nQuando parli, l'IA valuta la tua **Empatia** in base a un profilo segreto generato per quell'entità:\n*   **Validazione:** Ottieni punteggi alti se riconosci il dolore del sognatore invece di dare consigli banali o giudicarlo.\n*   **Dettagli Sensoriali:** L'IA nasconde indizi (odori, suoni, sensazioni) nelle sue risposte. Se li identifichi e li usi nel tuo discorso, il rapporto sale più velocemente.\n*   **Livello di Lucidità:** Man mano che il rapporto sale, le risposte dell'Incubo passano da urla deliranti e messaggi criptici a frasi più umane e riconoscenti.\n\n### 4. Feedback Visivo (Il Frammento d'Anima)\nAl centro dell'interfaccia di dialogo vedi il **Cristallo dell'Anima**:\n*   **Spento/Inquieto:** Rapporto neutrale.\n*   **Luminoso (Azzurro):** Rapporto positivo, l'entità si sta calmando.\n*   **Irritato (Rosso):** Rapporto negativo, l'entità sta perdendo la pazienza.\n*   **Effetti:** Lampeggia in **oro** quando guadagni punti o in **rosso** quando ne perdi.\n\n### 5. Strategia\nIl successo dipende dalla tua capacità di agire come uno **Specchio**. Se l'Incubo ha molta \"Paura\" (HP alti), sarà più \"arrogante\" e difficile da convincere, penalizzando di più le risposte vaghe o astratte.",
+      "cMarkNode": {}
+    },
+    "createdTimestamp": 1766675666306,
+    "doneTimestamp": 1766675666358
+  }
+]
