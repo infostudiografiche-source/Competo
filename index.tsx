@@ -1196,7 +1196,7 @@ const App = () => {
           </div>
           <div className="side-panel">
             <div className="side-panel-header">
-                <img src={preloadedAssets.logos.titleSmall} alt="Competo Logo" className="side-panel-logo" />
+                <img src="/assets/loghi/TITOLO.png" alt="Competo Logo" className="side-panel-logo" style={{ maxHeight: '36px', width: 'auto', objectFit: 'contain' }} />
                 <div className="side-panel-controls">
                     <button className="side-panel-button" onClick={() => setModalInfo({ type: 'menu', title: 'Menu di Gioco' })} title="Menu">
                         <Menu size={19} />

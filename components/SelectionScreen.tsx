@@ -35,7 +35,7 @@ export const SelectionScreen: React.FC<{ onSettingsConfirm: (settings: GameSetti
             <div className="selection-layout">
                 <section className="selection-stage-panel">
                     <div className="selection-stage-header">
-                        <img src={preloadedAssets.logos.titleSmall} alt="Competo" className="selection-logo" />
+                        <img src="/assets/loghi/TITOLO.png" alt="Competo" className="selection-logo" style={{ maxHeight: '42px', width: 'auto', objectFit: 'contain' }} />
                         <p className="selection-stage-tagline">Prepara la compagnia dei Sognatori</p>
                     </div>
                     <div className="selection-stage-viewport">
