@@ -1,15 +1,16 @@
 import React from 'react';
-import { ScrollText, Volume2, VolumeX } from 'lucide-react';
+import { ScrollText, Volume2, VolumeX, Bug } from 'lucide-react';
 import { GameState } from '../../gameLogic';
 import { AudioManager } from '../../services/AudioManager';
 
 interface MenuModalContentProps {
     gameState: GameState;
     onOpenRules: () => void;
+    onOpenDebug: () => void;
     onClose: () => void;
 }
 
-export const MenuModalContent: React.FC<MenuModalContentProps> = ({ onOpenRules, onClose }) => {
+export const MenuModalContent: React.FC<MenuModalContentProps> = ({ onOpenRules, onOpenDebug, onClose }) => {
     const isAudioEnabled = AudioManager.isAudioEnabled();
 
     return (
@@ -24,6 +25,16 @@ export const MenuModalContent: React.FC<MenuModalContentProps> = ({ onOpenRules,
                     <div className="option-text">
                         <h4>Regolamento</h4>
                         <p>Leggi le leggi del mondo di Competo.</p>
+                    </div>
+                </button>
+
+                <button type="button" className="menu-option-card" onClick={onOpenDebug}>
+                    <span className="option-icon">
+                        <Bug size={28} style={{ color: '#f0bd17' }} />
+                    </span>
+                    <div className="option-text">
+                        <h4>Pannello di Debug</h4>
+                        <p>Simulazione partite e test invarianti (0 Token).</p>
                     </div>
                 </button>
 

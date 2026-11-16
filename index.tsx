@@ -25,6 +25,7 @@ import { DiceUpgradeModal } from './components/DiceUpgradeModal';
 import { ModalWrapper } from './components/ModalWrapper';
 import { Board3D, ActivePawnMove } from './components/Board3D';
 import { PlayerCard3D, PlayerCardBackTab } from './components/cards/PlayerCard3D';
+import { DebugPanelModal } from './components/DebugPanelModal';
 
 // Modal Content Components
 import { InfoModalContent } from './components/modals/InfoModalContent';
@@ -71,6 +72,7 @@ const App = () => {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const [hpSacrificeAmount, setHpSacrificeAmount] = useState(1);
   const [toastInfo, setToastInfo] = useState<{ message: string; id: number } | null>(null);
+  const [showDebugPanel, setShowDebugPanel] = useState(false);
   const previousKeysRef = useRef<GameState['keys']>(gameState.keys); // for key notifications
   const previousTrustLevelRef = useRef<string>(gameState.trustLevel); // for trust notifications
   const modalTokenRef = useRef(0);
@@ -979,6 +981,7 @@ const App = () => {
             content = <MenuModalContent 
                         gameState={gameState} 
                         onOpenRules={() => setModalInfo({ type: 'rules', title: 'Regolamento' })} 
+                        onOpenDebug={() => { setShowDebugPanel(true); closeModal(); }}
                         onClose={closeModal} 
                       />;
             footer = null;
@@ -1242,6 +1245,7 @@ const App = () => {
               onUpgrade={handleApplyDiceUpgrade}
           />
       )}
+      {showDebugPanel && <DebugPanelModal onClose={() => setShowDebugPanel(false)} />}
       {toastInfo && <div key={toastInfo.id} className="toast-notification">{toastInfo.message}</div>}
     </>
   );

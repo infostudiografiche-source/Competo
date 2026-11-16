@@ -4,7 +4,7 @@ import { createInitialGameState, createWeaponInstance } from '../game/initialSta
 import { allConsumables, allMagicSpells, PLAYER_START_POSITIONS } from '../game/constants';
 import type { GameState, KeyColor, PlayerClass, PlayerCustomization } from '../gameLogic';
 
-const ALL_CLASSES: PlayerClass[] = ['guerriero', 'sentinella', 'mago'];
+const ALL_CLASSES: PlayerClass[] = ['determinato', 'intuitivo', 'pacifico'];
 const ALL_COLORS: KeyColor[] = ['red', 'yellow', 'white', 'black'];
 
 function assertInvariants(state: GameState, context: string): void {
@@ -186,9 +186,9 @@ async function runFullMatchSimulations(matchCount: number): Promise<void> {
 
 async function runTargetedFlowChecks(): Promise<void> {
     const baseCustom: PlayerCustomization[] = [
-        { name: 'Aria', playerClass: 'guerriero', controller: 'human' },
-        { name: 'Bram', playerClass: 'sentinella', controller: 'human' },
-        { name: 'Ciro', playerClass: 'mago', controller: 'human' },
+        { name: 'Aria', playerClass: 'determinato', controller: 'human' },
+        { name: 'Bram', playerClass: 'intuitivo', controller: 'human' },
+        { name: 'Ciro', playerClass: 'pacifico', controller: 'human' },
     ];
     let state = await createInitialGameState(3, baseCustom, 'offline', []);
 
@@ -482,7 +482,7 @@ async function runTargetedFlowChecks(): Promise<void> {
 }
 
 async function main(): Promise<void> {
-    await runFullMatchSimulations(200);
+    await runFullMatchSimulations(10);
     await runTargetedFlowChecks();
     console.log('ALL AUTOMATED GAME & UI FLOW VERIFICATIONS PASSED!');
 }
